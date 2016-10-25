@@ -46,6 +46,10 @@ public class User {
      this.district=district;
      this.status=true;
    }
+   User()
+   {
+	   
+   }
     @Override
     public String toString()
     {

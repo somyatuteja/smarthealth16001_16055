@@ -19,6 +19,10 @@ public class Moderator extends User{
         this.cno=cno;
         
     }
+    public Moderator()
+     {
+    	 
+     }
      String getPhone()
     {
         return this.cno;

@@ -484,21 +484,22 @@ public class Database {
 
 	}
 	//qualification of moderators
-	void showQualifications()
-	{	try {
+	ResultSet showQualifications()
+	{
+	ResultSet rs=null;
+	try {
 		Connection con= ConnectionToDB.getInstance().getConnection();
 		PreparedStatement ps;
 		String sqlget="select * from qualification";
 		ps=con.prepareStatement(sqlget);
-		ResultSet rs=ps.executeQuery();
-		while(rs.next())
-		{
-			System.out.println("Press "+rs.getInt("qualificationid")+"for "+rs.getString("description") );
-		}}
+		rs=ps.executeQuery();
+		
+	}
 	catch(Exception e)
 	{
-		e.printStackTrace();
+		
 	}
+	return rs;	
 	}
 
 	//accept friend request

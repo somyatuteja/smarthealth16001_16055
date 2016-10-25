@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 public class console {
-	
+/*	
 	
 	
 	
@@ -42,7 +42,7 @@ public static void main(String args[])
 		System.out.print("Please  try some other user name.This user name already exists");
 	 }
 		
-	 }*/
+	 }
 	 sim.pWord();
 	 sim.allOtherDetails();
 	 /*flag=true;
@@ -94,7 +94,7 @@ public static void main(String args[])
 		String dis=s.next();
 		System.out.println("Enter postalarea");
 		String postal=s.next(); 
-	     */ 
+	   
 	     System.out.println("\n 1: Moderator" + "\n 2: Admin"+ "\n 3: End User");
 		 
 	     j=s.nextInt();
@@ -116,7 +116,7 @@ public static void main(String args[])
 	
 		 dbase.showQualifications();
 		 int id=s.nextInt();
-		 dbase.addModeratorQualificationToDatabase(moduser, id);*/
+		 dbase.addModeratorQualificationToDatabase(moduser, id);
 		  
 		 }
 		 
@@ -134,7 +134,7 @@ public static void main(String args[])
 			Admin aduser=new Admin(username, password,firstname,  lastname,  email1,
 					email2, pic1, pic2,pic3,aboutme, phone,
 					streetname,streetno, postal,  mun,"new", dis);
-			dbase.addAdminToDatabase(aduser);*/
+			dbase.addAdminToDatabase(aduser);
 			sim.admin();
 		}
 		
@@ -146,7 +146,7 @@ public static void main(String args[])
 					email2, pic1, pic2,pic3,aboutme,
 					streetname,streetno, postal,  mun,"new", dis);
 			
-			dbase.addEndUserToDatabase(euser);*/
+			dbase.addEndUserToDatabase(euser);
 		}
 		
 		break;
@@ -276,7 +276,7 @@ public static void main(String args[])
 	        	 String newphn=s.next();
 	        	 dbase.updatePhone(Uname, newphn); 
 	        	 
-	         }*/
+	         }
 	          }
 	         
 	         if(jk==3){
@@ -351,10 +351,10 @@ public static void main(String args[])
 	 }
 		
 		
+		*/
 		
 		
-		
-}
+
 	
 }
 
